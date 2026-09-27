@@ -10,7 +10,7 @@ The verification environment leverages specialized sequences, a behavioral refer
 
 The verification structure strictly adheres to standard UVM guidelines, segregating stimulus generation from checking mechanisms:
 
-text
+```text
 uvm_top
  └── my_test
       └── my_env
@@ -22,7 +22,7 @@ uvm_top
            ├── my_comparator (Automated transaction comparator)
            ├── my_coverage (Functional coverage monitor)
            └── my_scoreboard (Evaluates pass/fail metrics)
-
+```
 
 ### Component Breakdown
 * *Top-Level (testbench.sv)*: Instantiates the Device Under Test (DUT), binds the physical verification interfaces (dut_if), and executes run_test().
